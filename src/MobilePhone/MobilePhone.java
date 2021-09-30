@@ -13,6 +13,14 @@ public class MobilePhone extends Graphics {
 		contacts = new ArrayList<Contact>();
 	}
 	
+	public void start() {
+		int exit = 0;
+		while(exit == 0) {
+			
+			
+		}
+	}
+	
 	// New contact
 	public void createContact(String name, String phone, String email) {
 		Contact newContact = new Contact(name, phone, email);
@@ -39,12 +47,18 @@ public class MobilePhone extends Graphics {
 		
 	}
 	// Delete contact
-	
+	public void deleteContact(int contactIndex) {
+		contacts.remove(contactIndex);
+		log("Removed contact");
+	}
 	// Query contact
+	public String getContact(int contactIndex) {
+		return contacts.get(contactIndex).toString();
+	}
 	
 	public void printContacts() {
 		for(Contact contactItem:contacts) {
-			System.out.println(contactItem.getName());
+			log(contactItem.getName());
 		}
 	}
 	

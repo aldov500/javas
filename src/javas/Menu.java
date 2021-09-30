@@ -11,7 +11,7 @@ import MobilePhone.MobilePhone;
  * @author Aldo
  *
  */
-public class Menu {
+public class Menu extends Graphics{
 	List<String> programs;
 	
 	Menu(){
@@ -60,10 +60,5 @@ public class Menu {
 			
 		}
 	}
-	private void log(String message) {
-		System.out.println(message);
-	}
-	private void log(int message) {
-		System.out.println(message);
-	}
+
 }
